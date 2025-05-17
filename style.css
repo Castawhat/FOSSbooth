@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    color: white;
+}
+
+div {
+    width: 50%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+video {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+canvas {
+    border: 2px solid white;
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+}

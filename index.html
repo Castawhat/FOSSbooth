@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Photobooth v1</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Booth App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcomeScreen">
+        <h1>Welcome to the Photo Booth</h1>
+        <button onclick="showScreen('photoSelection')">Start</button>
+    </div>
+
+    <div id="photoSelection" style="display: none;">
+        <h2>How many photos on your strip?</h2>
+        <button onclick="startPhotoBooth(2)">2 Photos</button>
+        <button onclick="startPhotoBooth(3)">3 Photos</button>
+        <button onclick="startPhotoBooth(4)">4 Photos</button>
+    </div>
+
+    <div id="photoCapture" style="display: none;">
+        <h2 id="countdownText">Ready to take photos?</h2>
+        <video id="camera" autoplay></video>
+        <button onclick="startPhotoSequence()">Start Taking Photos</button>
+    </div>
+
+    <div id="outputOptions" style="display: none;">
+        <h2>Print or Download Your Photo Strip</h2>
+        <canvas id="photoCanvas"></canvas>
+        <br>
+        <label for="caption">Add Text:</label>
+        <input type="text" id="caption" placeholder="Enter your message">
+        <br>
+        <button onclick="applyText()">Apply Text</button>
+        <button onclick="downloadPhoto()">Download</button>
+        <button onclick="printPhoto()">Print</button>
+        <button onclick="returnToStart()">Return to Start</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

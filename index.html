@@ -18,7 +18,7 @@
 </head>
 <body>
     <div id="welcomeScreen">
-        <h1>Welcome to the Photo Booth</h1>
+        <h1>Welcome to Photobooth</h1>
         <button onclick="showScreen('photoSelection')">Start</button>
     </div>
 
@@ -32,11 +32,11 @@
     <div id="photoCapture" style="display: none;">
         <h2 id="countdownText">Ready to take photos?</h2>
         <video id="camera" autoplay></video>
-        <button onclick="startPhotoSequence()">Start Taking Photos</button>
+        <button onclick="startPhotoSequence()">Go</button>
     </div>
 
     <div id="outputOptions" style="display: none;">
-        <h2>Print or Download Your Photo Strip</h2>
+        <h2>Customise and Print or Download Your Photo Strip</h2>
         <canvas id="photoCanvas"></canvas>
         <br>
         <label for="caption">Add Text:</label>

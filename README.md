@@ -1,10 +1,10 @@
 # FOSSbooth
-## The Best Open Source Photobooth Software!
+## The Best Open Source Photobooth!
 
 ## How To Run
 
 ### Web
-castawhat.github.io/photobooth
+Go to: https://castawhat.github.io/photobooth
 
 ### Offline
 Download the HTML, CSS and JS into a folder and click on index.html. 

@@ -18,31 +18,31 @@
 </head>
 <body>
     <div id="welcomeScreen">
-        <h1>Welcome to Photobooth</h1>
-        <button onclick="showScreen('photoSelection')">Start</button>
+        <h1>Welcome to the Photobooth</h1>
+        <button onclick="showScreen('photoSelection')">Start Photobooth Experience</button>
     </div>
 
     <div id="photoSelection" style="display: none;">
-        <h2>How many photos on your strip?</h2>
+        <h2>How many photos do you want on your strip?</h2>
         <button onclick="startPhotoBooth(2)">2 Photos</button>
         <button onclick="startPhotoBooth(3)">3 Photos</button>
         <button onclick="startPhotoBooth(4)">4 Photos</button>
     </div>
 
     <div id="photoCapture" style="display: none;">
-        <h2 id="countdownText">Ready to take photos?</h2>
+        <h2 id="countdownText">Are you ready to take your photos?</h2>
         <video id="camera" autoplay></video>
         <button onclick="startPhotoSequence()">Go</button>
     </div>
 
     <div id="outputOptions" style="display: none;">
-        <h2>Customise and Print or Download Your Photo Strip</h2>
+        <h2>Lets customiss and Print or Download Your Photo Strip!</h2>
         <canvas id="photoCanvas"></canvas>
         <br>
         <label for="caption">Add Text:</label>
-        <input type="text" id="caption" placeholder="Enter your message">
+        <input type="text" id="caption" placeholder="Enter your amazing caption here">
         <br>
-        <button onclick="applyText()">Apply Text</button>
+        <button onclick="applyText()">Apply Caption</button>
         <button onclick="downloadPhoto()">Download</button>
         <button onclick="printPhoto()">Print</button>
         <button onclick="returnToStart()">Return to Start</button>

@@ -4,7 +4,7 @@
 ## How To Run
 
 ### With Internet, Online
-Go to: https://castawhat.github.io/photobooth
+Go to: https://castawhat.github.io/FOSSbooth
 
 ### No Internet, Offline
 Download the HTML, CSS and JS into a folder and click on index.html. 

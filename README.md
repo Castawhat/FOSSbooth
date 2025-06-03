@@ -1,5 +1,5 @@
 # FOSSbooth
-## The Best Open Source Photobooth!
+## The Best Open Source Browser-Based Photobooth!
 
 ## How To Run
 

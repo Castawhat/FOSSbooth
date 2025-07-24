@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>FOSSbooth v1.1</title>
+  <title>FOSSbooth v1.2</title> <!-- Change name here for tab name -->
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -13,39 +13,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Booth App</title>
+    <title>FOSSbooth</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="welcomeScreen">
-        <h1>Welcome to FOSSbooth</h1>
-        <button onclick="showScreen('photoSelection')">Start</button>
+        <h1>Welcome to FOSSbooth!</h1> <!--Change this to change the the greeting/name in the app-->
+        <button onclick="showScreen('photoSelection')">Lets Go!</button> <!--Change this to change the text in the app-->
     </div>
 
     <div id="photoSelection" style="display: none;">
-        <h2>How many photos do you want on your strip?</h2>
+        <h2>How many photos do you want on your strip?</h2> <!--Change this to change the text in the app-->
         <button onclick="startPhotoBooth(2)">2 Photos</button>
         <button onclick="startPhotoBooth(3)">3 Photos</button>
-        <button onclick="startPhotoBooth(4)">4 Photos</button>
     </div>
 
     <div id="photoCapture" style="display: none;">
-        <h2 id="countdownText">Are you ready to take your photos?</h2>
+        <h2 id="countdownText">Are you ready to take your photos?</h2> <!--Change this to change the text in the app-->
         <video id="camera" autoplay></video>
-        <button onclick="startPhotoSequence()">Go</button>
+        <button onclick="startPhotoSequence()">Go</button> <!--Change this to change the button label in the app-->
     </div>
 
     <div id="outputOptions" style="display: none;">
-        <h2>Lets customise and Print or Download Your Photo Strip!</h2>
+        <h2>Lets customise and Print or Download Your Photo Strip!</h2> <!--Change this to change the title in the app-->
         <canvas id="photoCanvas"></canvas>
         <br>
         <label for="caption">Add Text:</label>
-        <input type="text" id="caption" placeholder="Enter your amazing caption here">
+        <input type="text" id="caption" placeholder="Enter your amazing caption here"> <!--Change this to change the placeholder in the app-->
         <br>
         <button onclick="applyText()">Apply Caption</button>
         <button onclick="downloadPhoto()">Download</button>
-        <button onclick="printPhoto()">Print</button>
-        <button onclick="returnToStart()">Return to Start</button>
+        <button onclick="printPhoto()">Print (Using your browser's print dialog</button> <!-- Note: Actual printing functionality may vary by browser and OS, remove this line for not letting users print. -->
+        <button onclick="returnToStart()">Start Over</button>
     </div>
 
     <script src="script.js"></script>
